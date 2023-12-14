@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="#{index.title}"></title>
+    <link th:href="@{/css/test.css}" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 th:text="#{index.message}"></h1>
+    <select id="selectBox">
+      <option disabled selected>Lang</option>
+      <option value="en">en</option>
+      <option value="mm">mm</option>
+    </select>
+    <script th:src="@{/js/test.js}" type="text/javascript"></script>
+  </body>
+</html>
